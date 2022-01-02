@@ -10,12 +10,24 @@
     <input type="text" id="num1">
     <input type="text" id="num2">
     <input type="text" id="num3">
-    <input type="button">
+    <input type="button" onclick="calculate()">
+    <h1 id="summ">Calculate</h1>
+
 
 
     <script>
         function calculate(){
-var a=document.getElementById("num1")
+var a=parseInt(document.getElementById("num1").value);
+var b=document.getElementById("num2").value;
+var sum;
+var c=parseInt(document.getElementById("num3").value);
+
+if (b=="+"){
+sum=a+c;
+document.getElementById("summ").innerHTML=String(sum);
+
+}
+
 
         }
         
